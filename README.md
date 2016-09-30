@@ -1,4 +1,4 @@
 ## ANF
 
-This is very simle website that i build for assessment
+This is very simple website that i build for assessment
 
