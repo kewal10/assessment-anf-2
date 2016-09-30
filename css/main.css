@@ -1,0 +1,720 @@
+/*
+  ===============================
+  All page
+  ================================
+*/
+
+
+* {
+  outline : none;
+}
+
+fieldset {
+  padding : 0 12px;
+}
+
+body,
+html {
+  position    : relative;
+  font-family : 'Roboto',
+                sans-serif;
+  font-size   : 16px;
+  font-weight : 300;
+}
+
+a:hover {
+  color : #FFFFFF;
+}
+
+a {
+  color              : rgba(255, 255, 255, 0.8);
+  -moz-transition    : all .3s ease-in;
+  -ms-transition     : all .3s ease-in;
+  -o-transition      : all .3s ease-in;
+  -webkit-transition : all .3s ease-in;
+}
+
+#btn-decrease, #btn-increase {
+  color: #333;
+  margin: 0 22px;
+  font-size: 20px;
+}
+
+.f-s-c {
+    margin-top: 128px;
+    margin-bottom: -66px;
+}
+
+/*
+  ===============================
+  Navigation
+  ================================
+*/
+
+
+.navbar-default {
+  padding          : 16px 0px;
+  border           : none;
+  border-radius    : 0;
+  background-color : rgba(0, 96, 100, 0.8);
+}
+
+.navbar-default .navbar-brand {
+  color              : rgba(255, 255, 255, 0.8);
+  font-family        : 'Roboto',
+                       sans-serif;
+  font-size          : 28.3px;
+  font-weight        : 600;
+  -moz-transition    : all .3s ease-in;
+  -ms-transition     : all .3s ease-in;
+  -o-transition      : all .3s ease-in;
+  -webkit-transition : all .3s ease-in;
+  transition         : all .3s ease-in;
+}
+
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color              : #FFFFFF;
+  background-color   : transparent;
+  -moz-transition    : all .3s ease-in;
+  -ms-transition     : all .3s ease-in;
+  -o-transition      : all .3s ease-in;
+  -webkit-transition : all .3s ease-in;
+  transition         : all .3s ease-in;
+}
+
+.navbar-default .navbar-nav> li> a {
+  margin      : -2px 12px;
+  color       : rgba(255, 255, 255, 0.8);
+  font-family : 'Roboto',
+                sans-serif,
+                serif;
+  font-size   : 18px;
+  font-weight : 400;
+}
+
+.navbar-default .navbar-nav> li> a:focus,
+.navbar-default .navbar-nav> li> a:hover {
+  color              : #FFFFFF;
+  border-bottom      : 4px solid #03A9F4;
+  background-color   : transparent;
+  -moz-transition    : all .1s linear;
+  -ms-transition     : all .1s linear;
+  -o-transition      : all .1s linear;
+  -webkit-transition : all .1s linear;
+  transition         : all .1s linear;
+}
+
+.navbar-default .navbar-nav> .open> a,
+.navbar-default .navbar-nav> .open> a:active,
+.navbar-default .navbar-nav> .open> a:focus,
+.navbar-default .navbar-nav> .open> a:hover {
+  color            : #FFFFFF;
+  background-color : rgba(0, 96, 100, .8);
+}
+
+.dropdown-menu> li> a {
+  display            : block;
+  clear              : both;
+  padding            : 3px 20px;
+  color              : #FFFFFF;
+  background-color   : rgba(0, 64, 67, 0.8);
+  font-weight        : normal;
+  line-height        : 1.42857143;
+  white-space        : nowrap;
+  -moz-transition    : all .3s linear;
+  -ms-transition     : all .3s linear;
+  -o-transition      : all .3s linear;
+  -webkit-transition : all .3s linear;
+  transition         : all .3s linear;
+}
+
+.dropdown-menu {
+  z-index          : 1000;
+  display          : none;
+  position         : absolute;
+  top              : 100%;
+  left             : 0;
+  min-width        : 160px;
+  float            : left;
+  margin           : 2px 0 0;
+  padding          : 5px 0;
+  background-color : rgba(0, 64, 67, 0.8);
+  text-align       : left;
+  font-size        : 14px;
+  list-style       : none;
+}
+
+.navbar-nav> li> .dropdown-menu {
+  margin-top              : 0;
+  border-top-left-radius  : 0;
+  border-top-right-radius : 0;
+  background-color        : rgba(0, 64, 67, 1);
+}
+
+.dropdown-menu> li> a:focus,
+.dropdown-menu> li> a:hover {
+  color            : #FFFFFF;
+  background-color : rgba(0, 64, 67, 1);
+  text-decoration  : none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color : rgba(0, 64, 67, 1);
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu> li> a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu> li> a:hover {
+  color            : #FFFFFF;
+  background-color : transparent;
+}
+
+.dropdown-menu> li> a:focus,
+.dropdown-menu> li> a:hover {
+  color            : #FFFFFF;
+  background-color : #f5f5f5;
+  text-decoration  : none;
+}
+
+a {
+  color :rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-menu> li> a {
+  display     : block;
+  clear       : both;
+  padding     : 3px 20px;
+  color       : rgba(255, 255, 255, 0.8);
+  font-weight : normal;
+  line-height : 1.42857143;
+  white-space : nowrap;
+}
+
+.navbar-default .navbar-toggle {
+  border : none;
+}
+
+.nav .open> a,
+.nav .open> a:focus,
+.nav .open> a:hover {
+  border           : none;
+  background-color : rgba(0, 64, 67, 1);
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu> li> a {
+    color : rgba(255, 255, 255, 0.8);
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color : #03A9F4;
+}
+
+.fa-3x.quick-access {
+  font-size : 2em!important;
+}
+
+.fa-facebook-official.quick-access,
+.fa-twitter-square.quick-access {
+  margin-top   : 6px;
+  margin-right : -10px;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border : none;
+}
+
+/*
+  ***********************
+  Sign In BTN
+  ***********************
+*/
+
+
+.btn-default {
+  width              : 114px;
+  height             : 40px;
+  margin-top         : 3px;
+  margin-top         : 3px;
+  color              : rgba(255, 255, 255, 0.8);
+  border             : 1px solid #03A9F4;
+  border-radius      : 10px;
+  background-color   : transparent;
+  outline            : none;
+  box-shadow         : none;
+  text-align         : center;
+  -moz-transition    : all .3s ease-in-out;
+  -ms-transition     : all .3s ease-in-out;
+  -o-transition      : all .3s ease-in-out;
+  -webkit-transition : all .3s ease-in-out;
+  transition         : all .3s ease-in-out;
+}
+
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover {
+  color            : #FFFFFF;
+  border-color     : #03A9F4;
+  background-color : #03A9F4;
+  outline          : none;
+  box-shadow       : none;
+}
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open> .dropdown-toggle.btn-default.focus,
+.open> .dropdown-toggle.btn-default:focus,
+.open> .dropdown-toggle.btn-default:hover {
+  color            : #FFFFFF;
+  border-color     : #03A9F4;
+  background-color : #03A9F4;
+  outline          : none;
+  box-shadow       : none;
+}
+
+.fb {
+  margin-top : 3px;
+}
+
+.facebook {
+  width            : 48px;
+  height           : 48px;
+  border-radius    : 28px;
+  background-color : rgba(59, 89, 152, .8)!important;
+  text-align       : center;
+}
+
+.facebook:hover {
+  color            : #FFFFFF!important;
+  border           : none!important;
+  background-color : rgba(59, 89, 152, 1)!important;
+}
+
+.twitter {
+  width            : 48px;
+  height           : 48px;
+  border-radius    : 28px;
+  background-color : rgba(85, 172, 238, .8)!important;
+  text-align       : center;
+}
+
+.twitter:hover {
+  color            : #FFFFFF!important;
+  border           : none!important;
+  background-color : rgba(85, 172, 238, 1)!important;
+}
+
+/*
+  ===============================
+  Latest
+  ================================
+*/
+
+
+.main-title {
+  margin-top : 30px;
+  font-size  : 36.8px;
+}
+
+.latest-item {
+  margin : 30px 0;
+}
+
+.add-to-cart {
+  position : relative;
+  overflow : hidden;
+}
+
+.add-to-cart {
+  opacity            : 1;
+  background-color   : rgba(0, 0, 0, 0);
+  -webkit-transition : all .4s ease-in-out;
+  transition         : all .4s ease-in-out;
+}
+
+.cart {
+  margin-top : 100px;
+}
+
+.add-to-cart .price {
+  position           : absolute;
+  top                : 0;
+  left               : 0;
+  width              : 100%;
+  height             : 100%;
+  color              : #fff;
+  opacity            : 0;
+  background-color   : rgba(0, 0, 0, 0.5);
+  text-align         : center;
+  font-size          : 21.1px;
+  -webkit-transition : all .4s ease-in-out;
+  transition         : all .4s ease-in-out;
+}
+
+.add-to-cart img {
+  display            : block;
+  position           : relative;
+  background-color   : rgba(0, 0, 0, 0.5);
+  -webkit-transition : all .4s linear;
+  transition         : all .4s linear;
+}
+
+.add-to-cart:hover img {
+  background-color  : rgba(0, 0, 0, 0.5);
+  -ms-transform     : scale(1.2);
+  -webkit-transform : scale(1.2);
+  transform         : scale(1.2);
+}
+
+.add-to-cart:hover .price {
+  opacity          : 1;
+  background-color : rgba(0, 0, 0, 0.5);
+  filter           : alpha(opacity=100);
+}
+
+/*
+  ===============================
+  Clothe Pages style
+  ================================
+*/
+
+
+.clothe-title {
+  margin-top : 100px;
+}
+
+a:focus,
+a:hover {
+  color           : #FFFFFF;
+  text-decoration : none;
+}
+
+/*
+  ===============================
+  Login & Register
+  ================================
+*/
+
+
+legend {
+  width         : auto;
+  border-bottom : 4px solid #03A9F4;
+}
+
+.form-title {
+  margin-top : 130px;
+}
+
+.signin {
+  color : #000;
+}
+
+.account {
+  color : rgba(0, 0, 0, 0.8);
+}
+
+.account:hover {
+  color : rgb(0, 0, 0);
+}
+
+input#confirm_password,
+input#email,
+input#full_name,
+input#password,
+textarea#message {
+  border-radius : 0;
+  outline-style : none;
+  box-shadow    : none;
+}
+
+.help-block {
+  font-size : 14px;
+}
+
+.send-message {
+  width  : 124px;
+  height : 58px;
+  color  : #000;
+}
+
+/*
+  ===============================
+  About Us
+  ================================
+*/
+
+.sign-btn {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #03A9F4;
+    border-radius: 8px;
+    text-align: center;
+    -moz-transition    : all .3s ease-in-out;
+    -ms-transition     : all .3s ease-in-out;
+    -o-transition      : all .3s ease-in-out;
+    -webkit-transition : all .3s ease-in-out;
+    transition         : all .3s ease-in-out;
+}
+
+.sign-btn:hover {
+    background-color: #03A9F4!important;
+}
+
+.social_feed {
+  margin : 40px 0;
+}
+
+.about {
+  margin-top    : 120px;
+  margin-bottom : 300px;
+}
+
+.about-p-t-a {
+  width         : 100px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+.about-p-t-v {
+  width         : 120px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+section.container.img-gal {
+  margin-top    : -215px;
+  margin-bottom : 80px;
+}
+
+address a {
+  color : rgba(0, 0, 0, 0.8);
+}
+
+address a:hover {
+  color : #000;
+}
+
+.s-info {
+  margin-top : 90px;
+}
+
+.l-b {
+  width         : 140px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+.v-o-f {
+  width         : 165px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+#map_canvas {
+  display : block;
+  width   : 100%;
+  height  : 400px;
+}
+
+.about-p-t-l {
+  width         : 306px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+  text-align    : center;
+}
+
+/*
+  ===============================
+  FAQ Us
+  ================================
+*/
+
+
+.panel-default>.panel-heading {
+  color            : #333;
+  border-color     : #95989A;
+  background-color : transparent;
+}
+
+.contact-footer {
+  margin-top : 0!important;
+}
+
+.contact {
+  width         : 120px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+.faq {
+  width         : 46px;
+  margin-top    : 130px;
+  margin-bottom : 20px;
+  border-bottom : 4px solid #03A9F4;
+}
+
+a:focus,
+a:focus,
+a:focus,
+a:hover.faq-q-1:hover,
+a:hover.faq-q-2:hover,
+a:hover.faq-q:hover {
+  color : #000;
+}
+
+a.collapsed:hover {
+  color : #000;
+}
+
+/*
+  ===============================
+  Footer
+  ================================
+*/
+
+
+#footer {
+  margin-top : 290px;
+}
+
+.footer-sign {
+  margin-top : 400px!important;
+}
+
+.fa-facebook-official {
+  margin-right  : 15px;
+  margin-bottom : 20px;
+}
+
+.fa-facebook-official:hover,
+.fa-twitter-square:hover,
+.footer a:hover {
+  color : rgba(255, 255, 266, 0.84);
+}
+
+.footer {
+  color               : rgba(255, 255, 266, 0.6);
+  background-image    : linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),
+                        url('../img/bg/footer-bg.jpg');
+  background-position : center;
+  background-position : center center;
+}
+
+.footer a {
+  color : rgba(255, 255, 266, 0.6);
+}
+
+.footer hr:nth-child(1) {
+  width : 40%;
+}
+
+.footer hr:nth-child(2) {
+  width : 50%;
+}
+
+.footer hr:nth-child(3) {
+  width : 80%;
+}
+
+@media screen
+       and (min-width: 300px)
+       and (max-width: 399px) {
+  h1 {
+    font-size : 20px!important;
+  }
+}
+
+@media screen
+       and (min-width: 400px)
+       and (max-width: 720px) {
+  h1 {
+    font-size : 26px!important;
+  }
+
+  .navbar-collapse {
+    margin         : 0 auto;
+    padding-bottom : 20px;
+    padding-left   : 150px;
+    line-height    : 100px;
+  }
+           
+           
+           a.facebook, a.twitter {
+               width: 40%;
+           }
+}
+
+@media screen
+       and (max-width: 768px) {
+  .navbar-default {
+    padding : 0;
+  }
+
+  h4 {
+    font-size : 24px;
+  }
+
+  .carousel-inner {
+    margin-top : 50px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    width : 100%!important;
+  }
+
+  button.btn.btn-default.navbar-btn {
+    width       : 56%!important;
+    margin-left : 28px!important;
+  }
+
+  a.facebook,
+  a.twitter {
+    width : 40%!important;
+  }
+
+  section.container.img-gal {
+    margin-top    : -274px;
+    margin-bottom : 80px;
+  }
+}
+
+@media screen
+       and (max-width: 400px) {
+  .navbar-default {
+    padding : 0;
+  }
+           
+    body {
+        width: 400px;
+        }       
+
+  h4 {
+    font-size : 24px;
+  }
+
+  .carousel-inner {
+    margin-top : 50px;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    width : 90% !important;
+  }
+
+  button.btn.btn-default.navbar-btn {
+    width       : 56% !important;
+    margin-left : 0 !important;
+  }
+
+  a.facebook,
+  a.twitter {
+    width : 40% !important;
+    margin-left: 0;  
+  }
+}
